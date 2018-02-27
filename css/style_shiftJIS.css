@@ -1,0 +1,389 @@
+@charset "Shift_JIS";
+/* CSS Document */
+
+
+/******************************
+   ヘッダ　
+******************************/
+
+header{
+	background: url(../images/header_bg.gif) repeat-x bottom;
+}
+
+header h1{
+	float: left;
+}
+
+header h1 img{
+	margin-top:20px;
+}
+
+
+#header_tel{
+	float: right;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	background: url(../images/header_tel.png) no-repeat left;
+	padding-left: 60px;
+	margin: 30px 0 40px 0;
+}
+
+#header_tel p{
+	font-size: 15px;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+/***** グローバルナビ *****/
+
+.G_Menu_list ul{
+	width: 100%;
+	display: table;
+	border-right: 2px solid #445C93;
+}
+
+.G_Menu_list ul li{
+	display: table-cell;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	list-style: none;
+	text-align: center;	
+	border-left: 2px solid #445C93;
+	width: 16.6666%;
+}
+
+.G_Menu_list ul li a{
+	display: block;
+	padding: 10px 0;
+	border-bottom: 5px solid rgba(255,255,255,0.00);
+}
+
+.G_Menu_list ul li a.on{
+	border-bottom: 5px solid #C1383D;
+	text-decoration: none;
+}
+
+.G_Menu_list ul li a:hover{
+	border-bottom: 5px solid #7C95D0;
+	text-decoration: none;
+}
+
+#G_Menu_btn{
+	display: none;
+}
+
+
+/******************************
+   フッタ　
+******************************/
+
+#footer{
+	background: #445C93;
+	color: #fff;
+}
+
+.footer_menu_home{
+	background: #C1383D;
+	padding: 10px 0;
+}
+
+.footer_menu_home .links{
+	float: right;
+}
+
+.footer_menu_home a{
+	color: #fff;
+}
+
+.footer_menu_home a.home{
+	background: url(../images/ico_home.png) no-repeat left center;
+	padding-left: 25px;
+}
+
+.footer_menu_list{
+	float: left;
+	margin: 30px 30px 30px 0;
+	width: calc(50% - 30px);
+}
+
+.footer_menu_list ul li{
+	list-style: none;
+	border-bottom: 1px dotted #fff;
+}
+
+.footer_menu_list ul li a{
+	display: block;
+	background: url(../images/link_wh.png) no-repeat left center;
+	padding: 5px 0 5px 15px;
+	color: #fff;
+}
+
+.footer_menu_list ul li a:hover{
+	text-decoration: none;
+	background: url(../images/link_wh.png) no-repeat left center #576C9C;
+}
+
+.footer_tit{
+	font-size: 20px;
+	padding: 10px 0;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+}
+
+
+.footer_hr{
+	display: none;
+}
+	
+
+
+/******************************
+   各ページ　
+******************************/
+
+.PageContents{
+	width: 750px;
+	margin: auto;
+	padding: 40px 0;
+}
+
+/***** 背景色 *****/
+
+.bg_White{
+	background: #fff;
+}
+
+.bg_LightBlue{
+	background: #EAEFF7;
+}
+
+.bg_Blue{
+	background: #445C93;
+	font-size: 20px;
+	color: #fff;
+	line-height: 1.6em;
+}
+
+/***** ページタイトル *****/
+
+h2.PageTitle{
+	color: #445C93;
+	font-size: 30px;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	height: 70px;
+	width: 180px;
+	line-height: 70px;
+	margin: 40px auto 20px;
+	padding-left: 50px;
+}
+
+h2.company{
+	background: url(../images/ico_company.png) no-repeat left center;
+}
+
+h2.access{
+	background: url(../images/ico_access.png) no-repeat left center;
+}
+
+h2.business{
+	background: url(../images/ico_business.png) no-repeat left center;
+}
+
+h2.equipment{
+	background: url(../images/ico_equipment.png) no-repeat left center;
+}
+
+h2.NoIcon{
+	width: 100% !important;
+	padding-left: 0 !important;
+}
+
+/***** ローカルナビ アンカーリンク *****/
+
+ul.anc_LinkList{
+	display: table;
+	list-style: none;
+	border-collapse: separate;
+	border-spacing: 10px;
+	margin: 0 auto 40px;
+}
+
+ul.anc_LinkList li{
+	display: table-cell;
+	border: 1px solid #445C93;
+	background: #eee;
+	width: 180px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+ul.anc_LinkList li a{
+	display: block;
+	padding: 3px 10px;
+	color: #445C93;
+}
+
+ul.anc_LinkList li a:hover{
+	text-decoration: none;
+	background: #fff;
+}
+
+/***** 見出し *****/
+
+h3{
+	color: #445C93;
+	font-size: 30px;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	margin-bottom: 30px;
+}
+
+h4{
+	border-left: 7px solid #445C93;
+	padding-left: 10px;
+	font-size: 18px;
+}
+
+/***** 会社紹介 *****/
+
+.bg_Blue h3{
+	color: #fff;
+}
+
+
+table.company_table{
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.company_table th,
+table.company_table td{
+	border:1px solid #ccc;
+	padding:10px;
+	vertical-align: top;
+	background: #fff;
+}
+
+table.company_table th{
+	border-right:none;
+	text-align:right;
+	font-weight:normal;
+	width: 30%;
+}
+
+table.company_table td{
+	border-left:none;
+	text-align:left;
+}
+
+/***** 写真リスト *****/
+
+ul.PhotoList{
+	list-style: none;
+	margin:0 -20px;
+}
+
+ul.PhotoList li{
+	float: left;
+	width: 230px;
+	margin: 20px 10px 0;
+}
+
+ul.PhotoList li img{
+	width: 230px;
+}
+
+ul.PhotoList li p{
+	font-size: 0.85em;
+}
+
+
+/***** 主なプラスチックの成形加工方法 *****/
+
+table.plastic{
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.plastic th,
+table.plastic td{
+	border:1px solid #ccc;
+	padding:10px;
+	vertical-align: top;
+	background: #fff;
+	vertical-align: middle;
+	
+}
+
+table.plastic th{
+	text-align:left;
+	font-weight:normal;
+	background: #e5e5e5;
+}
+
+table.plastic th.txt_center{
+	text-align:center;
+}
+
+table.plastic td{
+	text-align: center;
+	font-size: 15px;
+}
+
+table.plastic td.yellow{
+	background: #fffcd0;
+}
+
+table.plastic td.blue{
+	background: #e3f0f6;
+}
+
+/***** お問い合わせ *****/
+
+table.inquiry_table{
+	width:100%;
+	border-collapse:collapse;
+	border:1px solid #ccc;
+}
+
+table.inquiry_table td{
+	border-bottom:1px solid #ccc;
+	padding:10px;
+	vertical-align: top;
+	background: #fff;
+	text-align: left;
+}
+
+table.inquiry_table td.w30{
+	width: 30%;
+}
+
+
+.need_red{
+	background: #E70013;
+	padding: 0 5px;
+	color: #fff;
+	font-size: 12px;
+	float: right;
+	margin-left: 10px;
+}
+
+textarea{
+	width: 98%;
+}
+
+input{
+	width: 150px;
+	margin: 0 10px;
+}
+
+
+table input{
+	width: 50%;
+}

@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ==========================================
+	mediaQuery タブレット用
+========================================== */
+
+@media screen and (min-width: 641px) and (max-width: 949px) {
+	
+/******************************
+   ヘッダ　
+******************************/
+.G_Menu_list ul li{
+	letter-spacing: 0.05em;
+}
+	
+header h1{
+	width: 45%
+}
+	
+
+
+/******************************
+   各ページ　
+******************************/
+	
+.PageContents{
+	width: 90%;
+}
+
+/***** Google Map *****/
+	
+iframe{
+	width: 100%;
+}
+
+	
+}
+
+
+/* ==========================================
+	mediaQuery スマホ用
+========================================== */
+
+@media only screen and (max-width: 640px){
+	
+/***** 見出し *****/
+
+h3{
+	color: #445C93;
+	font-size: 25px;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	margin-bottom: 30px;
+}
+
+	
+/******************************
+   ヘッダ　
+******************************/
+
+header{
+	background: none;
+}
+
+header h1{
+	float: none;
+	text-align: center;
+}
+
+
+#header_tel{
+	float: none;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	background-color: #C1383D;
+	background-image: none;
+	padding: 5px 0;
+	margin: 20px -6% 5px -6%;
+}
+
+#header_tel p{
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+	
+#header_tel a{
+	color: #fff;
+	}
+	
+/***** グローバルナビ *****/	
+	
+#G_Menu_btn{
+	display: block;
+	background: url(../images/btn_G_Menu.png) no-repeat right #445C93;
+	background-size: contain;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 0.5em;
+	width:100%;
+	margin-top:10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+#G_Menu_btn.MenuActive{
+	background: url(../images/btn_G_Menu_close.png) no-repeat right #445C93;
+	background-size: contain;
+	-webkit-border-top-left-radius: 10px;  
+    -webkit-border-top-right-radius: 10px;  
+    -webkit-border-bottom-right-radius: 0;  
+    -webkit-border-bottom-left-radius: 0;  
+    -moz-border-radius-topleft: 10px;  
+    -moz-border-radius-topright: 10px;  
+    -moz-border-radius-bottomright: 0;  
+    -moz-border-radius-bottomleft: 0;
+}
+	
+#G_Menu_btn:hover{
+	text-decoration: none;
+}
+
+.G_Menu_list{
+	display:none;
+	clear:both;
+}
+
+.G_Menu_list ul{
+	border: none;
+	display: block;
+}
+	
+.G_Menu_list ul li{
+	width: 100%;
+	border: none;
+	font-weight: normal;
+	display: block;
+}
+
+.G_Menu_list li a{
+	display:block;
+	text-align:left;
+	padding:10px;
+	background:#eee;
+	border-top:2px solid #fff;
+}
+
+nav.G_Menu_list{
+	float:none;
+	font-weight:normal;
+}
+
+nav.G_Menu_list li{
+	float:none;
+	margin-left:0;
+}
+
+nav.G_Menu_list li a{
+	padding:10px 15px;
+}
+
+nav.G_Menu_list li a:hover,
+nav.G_Menu_list li a.on{
+	background: #D2D6DF;
+	border-bottom: none;
+}
+nav.G_Menu_list li.end a{
+border-radius: 10px;
+-webkit-border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+-webkit-border-bottom-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-topleft: 0;
+-moz-border-radius-topright: 0;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px;
+	}
+	
+/******************************
+   フッタ　
+******************************/
+
+#footer_contents{
+	margin: 0 auto;
+	width: 100%;
+}
+	
+.footer_menu_home .links{
+	float: none;
+	margin-top: 10px;
+}
+
+.footer_menu_list{
+	margin: 10px 10px 20px 10px;
+	width: calc(50% - 20px);
+}
+	
+.footer_tit{
+	font-size: 15px;
+	font-weight: bold;
+	padding: 5px 0;
+}
+	
+
+
+/******************************
+   各ページ　
+******************************/
+
+.PageContents{
+	width: 90%;
+}
+	
+
+/***** ローカルナビ アンカーリンク *****/
+
+ul.anc_LinkList{
+	display: none;
+}
+	
+/***** ページタイトル *****/
+
+h2.PageTitle{
+	font-size: 25px;
+}
+	
+/***** 会社紹介 *****/
+	
+table.company_table{
+	border: none;
+}
+
+table.company_table th,
+table.company_table td	{
+	display: block;
+	width:93%;
+	text-align: left;
+	border: 1px solid #ccc;
+}
+	
+table.company_table th{
+	border-bottom: none;
+	padding-bottom: 0;
+	font-weight: bold;
+}
+	
+table.company_table td{
+	border-top: none;
+	padding-top: 0;
+}
+	
+/***** Google Map *****/
+	
+iframe{
+	width: 100%;
+}
+
+/***** 写真リスト *****/
+
+
+ul.PhotoList li{
+	float: none;
+	width: 90%;
+	margin: 20px auto;
+}
+	
+ul.PhotoList li img{
+	width: 100%;
+}
+
+/***** 主なプラスチックの成形加工方法 *****/
+	
+.ScrollTable{
+	width: 100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+	padding-top: 30px;
+	background: url(../images/sp_right_scroll.png) no-repeat right top 5px;
+	background-size: 3%;
+	border-right: 2px solid #aaa;
+}
+
+table.plastic{
+	width:auto;
+	
+}
+	
+table.plastic th{
+	white-space: nowrap;
+}
+
+}

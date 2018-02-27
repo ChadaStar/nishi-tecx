@@ -1,0 +1,361 @@
+@charset "Shift_JIS";
+/* CSS Document */
+
+
+/****************************************
+
+          General Setting
+
+*****************************************/
+
+html, body {
+	margin:0;
+	padding:0;
+}
+
+body {
+    color: #333;
+	font-size: 14px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height:1.6em;
+}
+
+h1,h2,h3,h4,ul,p,dl{
+	margin:0;
+	padding:0;
+}
+
+
+
+/****************************************
+
+          common
+
+*****************************************/
+
+
+
+/* テキスト、フォント関連 */
+
+.txt_center{
+	text-align:center;
+}
+
+.txt_left{
+	text-align:left;
+}
+
+.txt_right{
+	text-align:right;
+}
+
+.txt_center_left{
+	text-align:center;
+}
+
+.storong{
+	font-weight:bold;
+}
+
+.fontS{
+	font-size:0.85em;
+}
+
+.fontL{
+	font-size:1.13em;
+	line-height:1.6em;
+}
+
+.fontLL{
+	font-size:1.4em;
+	line-height:1.6em;
+}
+
+.red{
+	color:#E70013;
+}
+
+sup,sub{
+	font-size:0.75em;
+}
+
+
+
+
+/* リンク関連 */
+
+a.link_btn{
+	border:1px solid #aaa;
+	padding:3px 6px;
+	background:url(../images/link_bl.png)  no-repeat 7px center #fff;
+	color:#333;
+	padding-left:23px;
+}
+
+a.link_btn:hover{
+	background:url(../images/link_bl.png)  no-repeat 7px center #F3D400;
+	text-decoration:none;
+	color:#333;
+}
+
+a img{
+	border:none;
+}
+
+a:hover img {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
+a{
+	color:#333;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#333;
+	text-decoration:underline;
+}
+
+/* レイアウト関連 */
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.fl_left{
+	float:left;
+}
+
+.fl_right{
+	float:right;
+}
+
+.cl_both{
+	clear:both;
+}
+
+.marginT40{
+	margin-top:40px;
+}
+
+.marginT20{
+	margin-top:20px;
+}
+
+.marginT10{
+	margin-top:10px;
+}
+
+.marginB15{
+	margin-bottom:15px;
+}
+.marginB10{
+	margin-bottom:10px;
+}
+
+.paddingB40{
+	padding-bottom:40px;
+}
+
+.marginR20{
+	margin-right:20px;
+}
+
+.paddingRL10{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.Hide_pc{
+	display:none;
+}
+
+
+/* リスト、ボックスなどのパーツ */
+
+
+ul.disc{
+	list-style:disc;
+	margin-left:1.5em;
+}
+
+.box{
+	border:2px solid #ccc;
+	padding:10px;
+}
+
+.box .box_tit{
+	font-size:16px;
+	font-weight:bold;
+	background:#eee;
+	padding:5px 10px;
+}
+
+hr{
+	border: 0;
+	height: 3px;
+    background: #ccc;
+	clear:both;
+}
+
+
+
+
+
+
+
+/****************************************
+
+          Layout
+		  
+*****************************************/
+
+
+
+#wrapper{
+	width:100%;
+	overflow:hidden;
+}
+
+header{
+	width:100%;
+	overflow:hidden;
+}
+
+.contents{
+	max-width:950px;
+	margin:0 auto;
+	clear:both;
+}
+
+.inner{
+	max-width:860px;
+	margin:0 auto;
+}
+
+#footer{
+	clear:both;
+	width:100%;
+	padding-bottom:20px;
+}
+
+#footer #copyright{
+	clear:both;
+	font-size:10px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.two_col{
+	width:48%;
+}
+
+/****************************************
+
+         TOPへ
+		  
+*****************************************/	
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+}
+
+/* ==========================================
+	mediaQuery タブレット用
+========================================== */
+
+@media screen and (min-width: 641px) and (max-width: 949px) {
+
+.contents{
+	width:90%;
+	margin:0 auto;
+	clear:both;
+}
+
+.inner{
+	width:90%;
+	margin:0 auto;
+}
+	
+img{
+	max-width:100%;
+	height: auto;
+}
+
+	
+}
+
+/* ==========================================
+	mediaQuery スマホ用
+========================================== */
+
+@media only screen and (max-width: 640px){
+	
+img{
+	max-width:100%;
+	height: auto;
+}
+
+.marginT40{
+	margin-top:20px;
+}
+
+.Hide_sp{
+	display:none;
+}
+
+.Hide_pc{
+	display:block;
+}
+
+.txt_center_left{
+	text-align:left;
+}
+
+/****************************************
+
+          Layout
+		  
+*****************************************/
+
+	
+.contents{
+	width:90%;
+	margin:0 auto;
+}
+
+.inner{
+	width:100%;
+}
+
+#footer{
+	width:100%
+}
+
+
+.two_col{
+	width:100%;
+}
+	
+	
+
+/****************************************
+
+         TOPへ
+		  
+*****************************************/	
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+}
+
